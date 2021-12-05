@@ -1,10 +1,10 @@
-export default {
+const styles = {
   main: {
     backgroundColor: '#fff',
     border: '1px solid #e6e6e6',
     borderBottomRightRadius: '3px',
     borderTopRightRadius: '3px',
-    maxWidth: '935px',
+    maxWidth: '1000px',
     margin: '16px auto',
     width: 'calc(100% - 40px)',
 
@@ -19,12 +19,26 @@ export default {
   image: {
     order: '1',
     flex: '1 0 60%',
-    alignSelf: 'flex-start'
+    alignSelf: 'stretch',
+	alignItems: 'center',
+	display: 'flex',
+	backgroundColor: '#fafafa'
   },
 
   text: {
     order: '2',
     flex: '1 0 40%',
-    alignSelf: 'flex-start'
+    alignSelf: 'stretch',
+	paddingLeft: '30px',
+	boxSizing: 'border-box',
+	display: 'flex',
+	flexDirection: 'column',
+	minHeight: '500px'
+  },
+
+  like : {
+	  order: '3'
   }
 }
+
+export default styles;
